@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function ad(x,y) {
+            document.write("Hello World <br>");
+            document.write(x+y + "<br>");
+            document.write(x-y + "<br>");
+            document.write(x*y + "<br>");
+        }
+        ad(10,20);
+        // function -> method -> component -> framework
+        const abes=()=>"Hello World <br>";
+        document.write(abes());
+
+        // Calculator using arrow function
+        const calculator=(x,y,operator)=>{
+            if(operator=="+")
+                return x+y;
+            else if(operator=="-")
+                return x-y;
+            else if(operator=="*")
+                return x*y;
+            else if(operator=="/")
+                return x/y;
+            else
+                return "Invalid operator";
+        }
+        document.write(calculator(10,20,"+") + "<br>");
+        
+    </script>
+</body>
+</html>

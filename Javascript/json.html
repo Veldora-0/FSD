@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const student = {
+            name : "admin",
+            class : "LKG",
+            fee : 10,
+            address : "meerut"
+        }
+        document.write(student.name + "<br>");
+        document.write(student.class + "<br>");
+        document.write(student.fee + "<br>");
+        document.write(student.address + "<br>");
+        
+        for (let key in student) {
+            // document.write(key + " : " + student[key] + "<br>");
+            document.write(key);
+        }
+        document.write(JSON.stringify(student) + "<br>");
+    </script>
+</body>
+</html>

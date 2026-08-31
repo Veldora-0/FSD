@@ -1,0 +1,145 @@
+<!-- A student registration page with using HTML, CSS and using JS for client side validation on password,email,contact no.-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Registration Form</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="storage.js"></script>
+   <script src="script.js"></script>
+</head>
+
+<body>
+   <header>
+      <h1>Registration Form</h1>
+   </header>
+
+   <main>
+      <form action="#" method="post" novalidate>
+
+         <!-- status message -->
+         <div id="status-message" class="status-message" role="status" aria-live="polite" hidden></div>
+
+         <!-- Name -->
+         <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <div class="field-error" id="name-error" aria-live="polite"></div>
+         </div>
+
+         <!-- Password -->
+         <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Atleast 8 characters" required>
+            <div class="field-error" id="password-error" aria-live="polite"></div>
+         </div>
+
+         <!-- Contact -->
+         <div class="form-group">
+            <label for="contact">Contact No.:</label>
+            <input type="number" id="contact" name="contact" placeholder="10 digit mobile number" required>
+            <div class="field-error" id="contact-error" aria-live="polite"></div>
+         </div>
+
+         <!-- Email -->
+         <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            <div class="field-error" id="email-error" aria-live="polite"></div>
+         </div>
+
+         <!-- Department -->
+         <div class="form-group">
+            <label for="department">Department:</label>
+            <select id="department" name="department">
+               <option value="">Select Department</option>
+               <option value="cs">Computer Science</option>
+               <option value="ee">Electrical Engineering</option>
+               <option value="me">Mechanical Engineering</option>
+            </select>
+         </div>
+
+         <!-- Designation -->
+         <div class="form-group">
+            <label for="designation">Designation:</label>
+            <select id="designation" name="designation">
+               <option value="">Select Designation</option>
+               <option value="student">Student</option>
+               <option value="faculty">Faculty</option>
+               <option value="employee">Employee</option>
+            </select>
+         </div>
+
+         <!-- Date of Birth -->
+         <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+         </div>
+
+         <!-- Gender -->
+         <div class="form-group">
+            <label>Gender:</label>
+
+            <div class="options">
+               <label>
+                  <input type="radio" name="gender" value="male">
+                  Male
+               </label>
+
+               <label>
+                  <input type="radio" name="gender" value="female">
+                  Female
+               </label>
+
+               <label>
+                  <input type="radio" name="gender" value="other">
+                  Other
+               </label>
+            </div>
+         </div>
+
+         <!-- Hobbies -->
+         <div class="form-group">
+            <label>Hobbies:</label>
+
+            <div class="options">
+               <label>
+                  <input type="checkbox" name="hobbies" value="reading">
+                  Reading
+               </label>
+
+               <label>
+                  <input type="checkbox" name="hobbies" value="sports">
+                  Sports
+               </label>
+
+               <label>
+                  <input type="checkbox" name="hobbies" value="music">
+                  Music
+               </label>
+
+               <label>
+                  <input type="checkbox" name="hobbies" value="other">
+                  Other
+               </label>
+            </div>
+         </div>
+
+         <!-- Buttons -->
+         <div class="buttons">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+         </div>
+
+         <div class="auth-link-wrap">
+            <a href="login.html" class="auth-link">Already have an account? Login</a>
+         </div>
+ 
+      </form>
+   </main>
+
+</body>
+
+</html>

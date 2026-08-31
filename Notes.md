@@ -19,3 +19,7 @@ task by task :- first one task get executed then we go to the next task
 but then if task 1 take large time so others task will have to wait for a long time
 So we have *async*
 Async programming structure
+
+map.html
+filter.html
+reduce.html

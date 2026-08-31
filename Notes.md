@@ -23,3 +23,5 @@ Async programming structure
 map.html
 filter.html
 reduce.html
+
+callback function - function which is passed as an argument to another function

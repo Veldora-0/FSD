@@ -1,0 +1,156 @@
+<!-- bus logo Bus Booking System
+ User Information
+ User Name
+ User Age
+ Adhaar Number
+ Select your City
+ Select Date
+ Bus Information  
+ Select your Bus Type
+ AC Bus 2000
+ Non-AC Bus, 1500
+ Select your Seat: 
+   Book Now
+
+When click on Book Now if empty alert will show to fill up the form 
+And after book now will show all details below using basic JSON and also calculate the total amount -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        // When click on Book Now if empty alert will show to fill up the form 
+// And after book now will show all details below using basic JSON and also calculate the total amount
+        function bookNow() {
+            var name = document.getElementById("name").value;
+            var age = document.getElementById("age").value;
+            var adhaar = document.getElementById("adhaar").value;
+            var city = document.getElementById("city").value;
+            var date = document.getElementById("date").value;
+            var busType = document.querySelector('input[name="busType"]:checked');
+            var seat = document.getElementById("seat").value;
+
+            if (!name || !age || !adhaar || !city || !date || !busType || !seat) {
+                alert("Please fill up the form completely.");
+                return;
+            }
+
+            var totalAmount = busType.value === "AC Bus 2000" ? 2000 : 1500;
+            totalAmount *= parseInt(seat);
+            var bookingDetails = {
+                name: name,
+                age: age,
+                adhaar: adhaar,
+                city: city,
+                date: date,
+                busType: busType.value,
+                seat: seat,
+                totalAmount: totalAmount
+            };
+
+            // Display the booking details
+            var detailsDiv = document.createElement("div");
+            detailsDiv.innerHTML = `
+                <h3>Ticket Booked Successfully:</h3>
+                <p>Name: ${bookingDetails.name}</p>
+                <p>Age: ${bookingDetails.age}</p>
+                <p>Adhaar Number: ${bookingDetails.adhaar}</p>
+                <p>City: ${bookingDetails.city}</p>
+                <p>Date: ${bookingDetails.date}</p>
+                <p>Bus Type: ${bookingDetails.busType}</p>
+                <p>Seat: ${bookingDetails.seat}</p>
+                <p>Total Amount: ${bookingDetails.totalAmount}</p>
+            `;  
+            document.querySelector(".details").appendChild(detailsDiv);
+
+        }
+    </script>
+    <style>
+        body{
+            color: white;
+        }
+        .container {
+            border: 2px solid black;
+            height: 700px;
+            width: 500px;
+            margin: 0 auto;
+            background-color: purple;
+        }
+        header {
+            display: flex;
+            text-align: center;
+            padding: 9px;
+            color: black
+        }
+        header img {
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+        .heading {
+            text-align: center;
+            padding: 9px;
+            border: 1px solid black;
+            margin: 10px;
+            color: black;
+            background-color: grey;
+        }
+        .info {
+            margin: 10px;
+        }
+        button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+    <div class="container">
+    <header> 
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYoNtHEZ8e7zsDIBLQfja69R1pJhY4Do_w7EmNo3V5ZA&s=10" alt="Bus Logo" width="100" height="100">
+        <h1 style="margin-top:auto">Bus Booking System</h1>
+    </header>
+    <h2 class="heading">User Information</h2>
+    <form class="info">
+        <label for="name">User Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+        <label for="age">User Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" required><br><br>
+        <label for="adhaar">Adhaar Number:</label>
+        <input type="text" id="adhaar" name="adhaar" placeholder="Enter Adhaar Number" required><br><br>
+        <label for="city">Select your City:</label>
+        <select id="city" name="city" required>
+            <option value="">--Select City--</option>
+            <option value="city1">Delhi</option>
+            <option value="city2">Ghaziabad</option>
+            <option value="city3">Hapur</option>
+        </select><br><br>
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+    </form>
+    <h2 class="heading">Bus Information</h2>
+    <form class="info">
+        <label for="busType">Select your Bus Type:</label><br><br>
+        <label for="ac">AC Bus 2000</label>
+        <input type="radio" id="ac" name="busType" value="AC Bus 2000" required><br><br>
+        <label for="nonAc">Non-AC Bus 1500</label>
+        <input type="radio" id="nonAc" name="busType" value="Non-AC Bus 1500" required><br><br>
+        <label for="seat">Select your Seat:</label>
+        <select id="seat" name="seat" required>
+            <option value="">--Select Seat--</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select><br><br>
+    </form>
+    <button type="submit" onclick="bookNow()">Book Now</button>
+    <div class="details"></div>
+    </div>
+ </body>
+ </html>

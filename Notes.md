@@ -25,3 +25,31 @@ filter.html
 reduce.html
 
 callback function - function which is passed as an argument to another function
+
+<!-- 300 by 300 px card with color
+ Online shop
+ * Rice 500
+ * Tea 700
+ * Coffie 800
+ * Sugar 62
+ buy now button
+
+ functionality when click on buy now by onclick
+ Enter your product name = Tea
+ Enter your quantity = 5Kg
+then show
+ Your total amount is 3500
+ with img of product
+
+ Use simple html, css, js, json
+ -->
+
+ <!-- Assignment 2
+ bus logo Bus Booking System
+ User Information
+ User Name
+ User Age
+ Adhaar Number
+ Select your City
+ Select Date
+ Bus Information  -->

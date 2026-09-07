@@ -65,7 +65,7 @@ And after book now will show all details below using basic JSON and also calcula
                 <p>Seat: ${bookingDetails.seat}</p>
                 <p>Total Amount: ${bookingDetails.totalAmount}</p>
             `;  
-            document.querySelector(".details").appendChild(detailsDiv);
+            document.getElementById("details").innerHTML = detailsDiv.innerHTML;
 
         }
     </script>
@@ -150,7 +150,7 @@ And after book now will show all details below using basic JSON and also calcula
         </select><br><br>
     </form>
     <button type="submit" onclick="bookNow()">Book Now</button>
-    <div class="details"></div>
+    <div id="details"></div>
     </div>
  </body>
  </html>

@@ -56,3 +56,24 @@ then show
 
  07-09-2026
  promise.js, async await.js, fetch.html (dummyjson.com/products)
+
+08-09-2026
+React folder -> library of JS
+Theory React, Use of React etc
+where component use -> library
+where function use -> framework
+React framework is vite
+commands:-
+   npm create vite@latest
+   project name: Pro1
+   Framework: React
+   variant : JavaScript
+   linter : Oxlint
+
+the converter which use to convert .js to .jsx is babel
+App.jsx - main component - clear code
+delete App.css, index.css
+extension es7 then in App.jsx boilerplate code is rafce
+read component in react 
+
+Assignment 3 weather app

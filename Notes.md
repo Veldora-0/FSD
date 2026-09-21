@@ -73,7 +73,33 @@ commands:-
 the converter which use to convert .js to .jsx is babel
 App.jsx - main component - clear code
 delete App.css, index.css
-extension es7 then in App.jsx boilerplate code is rafce
+extension es7 then in App.jsx boilerplate code is "rafce"
 read component in react 
 
 Assignment 3 weather app
+
+21-09-2026
+npm run dev - to run the project
+
+Component (Student.jsx, Card.jsx, Abes.jsx) - 3 components
+to
+App.jsx
+to
+Main.jsx
+to
+index.html
+
+babel is a compiler 
+
+Make component for student
+Folder in src -> components -> Student1.jsx
+
+Assignment 4
+
+Header.jsx comp1  Img Home About Us
+
+in middle one Card.jsx
+ABES HOTEL
+Card1 Pizza Img rate 100$ Card2 Burger Img rate 200$ Card3 Momo Img rate 50$
+
+Footer.jsx comp3  Address

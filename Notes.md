@@ -13,7 +13,9 @@ Object is constructor/class
 
 Array, Object, JSON
 
-sync.js 31-08-2026
+sync.js 
+
+*31-08-2026*
 
 task by task :- first one task get executed then we go to the next task 
 but then if task 1 take large time so others task will have to wait for a long time
@@ -54,10 +56,15 @@ then show
  Select Date
  Bus Information  -->
 
- 07-09-2026
- promise.js, async await.js, fetch.html (dummyjson.com/products)
+ *07-09-2026*
+ 
 
-08-09-2026
+promise.js, async await.js, fetch.html (dummyjson.com/products)
+
+*08-09-2026*
+
+
+
 React folder -> library of JS
 Theory React, Use of React etc
 where component use -> library
@@ -78,7 +85,11 @@ read component in react
 
 Assignment 3 weather app
 
-21-09-2026
+*21-09-2026*
+
+
+
+
 npm run dev - to run the project
 
 Component (Student.jsx, Card.jsx, Abes.jsx) - 3 components
@@ -103,3 +114,7 @@ ABES HOTEL
 Card1 Pizza Img rate 100$ Card2 Burger Img rate 200$ Card3 Momo Img rate 50$
 
 Footer.jsx comp3  Address
+
+*22-09-2026*
+
+how to use props in react

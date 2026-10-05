@@ -118,3 +118,17 @@ Footer.jsx comp3  Address
 *22-09-2026*
 
 how to use props in react
+
+*05-10-2026*
+
+props are used to pass data from parent component to child component
+as we use component in react same data will use but we need to pass different data to each component so we use props
+
+props 
+    parent is App.jsx
+                                                                   child is Student1.jsx
+    Student1.rollno= "102"                                         to change anything in child {props.rollno}
+    Student1.name= "Alice"                                          to change anything in child {props.name}
+    Student1.class= "B.Tech"                                        to change anything in child {props.class}
+
+change in Student1.jsx and app.jsx

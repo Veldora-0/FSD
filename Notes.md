@@ -163,5 +163,27 @@ we have 3 things
     -Link to=
     -path
 
+*06-10-2026*
+
+Hooks in react
+    useState - to store data in react
+    useEffect - to fetch data from api or server
+    useContext - to share data between components
+    useReducer - to manage state in react
+    useCallback - to optimize performance of react app
+    useMemo - to optimize performance of react app
+    useRef - to access DOM elements in react
+    useImperativeHandle - to customize the instance value that is exposed to parent components when using ref
+    useLayoutEffect - similar to useEffect but it fires synchronously after all DOM mutations
+    useDebugValue - to display a label for custom hooks in React DevTools
+
+Syntax of useState
+    Datatype [variable name, Setfunction variable name]
+                XYZ      ,    SetXYZ
+    const [XYZ, SetXYZ] = useState(initial value)
+
++ make in react folder named UseState 
+    clear App.jsx
+    make component in src folder named CounterApp.jsx
 
 

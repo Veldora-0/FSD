@@ -132,3 +132,36 @@ props
     Student1.class= "B.Tech"                                        to change anything in child {props.class}
 
 change in Student1.jsx and app.jsx
+
++ Hooks
+    The hooks are the new feature added in React 16.8 version.
+    Hooks are functions that let you “hook into” React state and lifecycle features from function components
+    types of hooks
+        1. useState
+        2. useEffect
+        3. useContext
+        4. useReducer
+        5. useCallback
+        6. useMemo
+        7. useRef
+        8. useImperativeHandle
+        9. useLayoutEffect
+        10. useDebugValue
+
+before we come to hooks first learn router in react
+
+it is like anchor in html
+    <a href="b.html">Google</a>
+npm i react-router-dom
+
+Page connectivity in react is done by router
+we use "/" for home page and "/about" for about page (/ is known as route)
+
+we have 3 things 
+    if we have a page which has Home,AboutUs,Contact
+    -page (made by function) 
+    -Link to=
+    -path
+
+
+

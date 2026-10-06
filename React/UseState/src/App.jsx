@@ -1,10 +1,10 @@
 import React from 'react'
-import CounterApp from './components/CounterApp'
+import Assignment_5 from './components/Assignment_5'
 
 const App = () => {
   return (
     <div>
-      <CounterApp />
+      <Assignment_5 />
     </div>
   )
 }

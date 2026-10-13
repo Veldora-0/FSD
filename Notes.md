@@ -186,4 +186,15 @@ Syntax of useState
     clear App.jsx
     make component in src folder named CounterApp.jsx
 
+Assignment 5
+    box of 600px by 600px with border
+    inside box img cat of 300px by 300px
+    4 buttons below img
+     Row +     Row - (width of img increase/decrease by 1px)
+     Col +     Col - (height of img increase/decrease by 1px)
+    { row/col increase/decrease by 1px }
+
++ UseEffect - to fetch data from api or server
+ Axios is a promise based HTTP client for the browser and node.js (fetch advacne version)
+ 
 

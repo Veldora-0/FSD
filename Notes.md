@@ -197,4 +197,38 @@ Assignment 5
 + UseEffect - to fetch data from api or server
  Axios is a promise based HTTP client for the browser and node.js (fetch advacne version)
  
+# 13-10-2026
++ useeffect - to fetch data from api or server  
+    syntax of useEffect
+        useEffect(() => {
+            // code to fetch data from api or server
+        }, [dependency array])
+    dependency array is optional if we want to run the useEffect only once then we can pass empty array
 
+- preventDefault() - to prevent the default behaviour of the event
+    syntax of preventDefault()
+        event.preventDefault()
+
++create new react project named UseEffect
+    clear App.jsx
+    
+    use destructuring in react 
+        formdata.name              }
+        formdata.email             }-> ...formdata
+        formdata.password          }
+    use target which is used to get the value of the input field
+        e.target.value
+
++ Assignment6:
+    use Axios in react to fetch data from api or server,
+    make a form with 3 input fields name,email,password and submit button 
+    useeffect to fetch data from api or server and display the data in a table below the form
+
+# 26-10-2026
+
++ UseRef-
+    Created React project named UseRef
+    App.jsx
++ UseContext
+    advantage of prop drilling
+    context is used to share data between components without having to pass props through every level of the component tree.
